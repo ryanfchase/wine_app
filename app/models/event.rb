@@ -1,3 +1,2 @@
-class Event < ActiveRecord::Base
-  attr_accessor :tag, :description
+class Event < ApplicationRecord
 end
