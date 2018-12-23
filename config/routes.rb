@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :events
   root to: "home#index"
-
+  devise_for :users
+  
   if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
   end
