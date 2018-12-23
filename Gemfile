@@ -58,3 +58,6 @@ gem "pg", "~> 1.1"
 gem 'graphiql-rails'
 
 gem "devise"
+group :development do
+  gem 'faker'
+end
