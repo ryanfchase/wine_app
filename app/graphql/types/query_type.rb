@@ -9,5 +9,13 @@ module Types
     def breakpoint
       { id: "1234", description: "Dummy task", timestamp: Time.current }
     end
+
+    field :me, UserType
+      description: "the current user"
+
+    def user
+      { id: "1234", description: "idk", timestamp: Time.current, user: User.first }
+    end
+
   end
 end
